@@ -1,0 +1,22 @@
+<!-- data.component.html -->
+
+<div class="container">
+  <h1>Registros</h1>
+
+  <!-- Tabla para mostrar registros -->
+  <table>
+    <thead>
+      <tr>
+        <th>Cliente</th>
+        <!-- Agrega encabezados para las otras propiedades del registro -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registro of registros">
+        <td>{{ registro.cliente }}</td>
+        <!-- Agrega celdas para las otras propiedades del registro -->
+      </tr>
+    </tbody>
+  </table>
+</div>
+
